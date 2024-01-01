@@ -23,6 +23,9 @@
     --color-bisque: bisque;
     ---color-orange:rgb(244, 118, 41);
     --color-orange-light: rgba(244, 118, 41, .3);
+    --color-grey: #ababab;
+    --color-grey-2: #68696c;
+    --color-dark: #333333;
 }
 
 *{
@@ -32,7 +35,7 @@
     outline: none;
     border: none;
     text-decoration: none;
-    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Lato', sans-serif;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -146,11 +149,12 @@ header{
     background: var(--color-black);
     color: var(--color-white);
     padding-block: .875rem;
+    transition: all .2s linear;
 }
 .header__top.active{
     /* display: none; */
     margin-top: -65px;
-    transition: all .3s linear;
+    transition: all .2s linear;
 }
 .header__container{
     align-items: center;
@@ -240,8 +244,8 @@ header{
     height: 80vh;
     display: flex;
     align-items: center;
-    margin-top: 7.5rem;
-    border-top: 1rem solid red;
+    margin-top: 7rem;
+    /* border-top: .1rem solid red; */
 }
 
 .home__container{
@@ -507,14 +511,19 @@ header{
 }
 
 .newsletter__container{
-    grid-template-columns: 2fr 6fr;
+    grid-template-columns: 3fr 6fr;
     align-items: center;
     column-gap: 3rem;
+    margin-top: 1rem;
+    padding: 3rem 0;
+    border-bottom: .1rem solid var(--color-grey);
 }
 
 .newsletter__title{
     column-gap: 1rem;
     font-size: var(--large-font-size);
+    color: var(--color-white);
+    font-family: var(--heading-font);
 }
 
 .newsletter__description{
@@ -558,15 +567,15 @@ header{
 
 /*=============== FOOTER ===============*/
 .footer{
-    background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9)), url(../images/male-electrician-works-switchboard-with-electrical-connecting-cable.jpg);
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.9)), url(../images/male-electrician-works-switchboard-with-electrical-connecting-cable.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 1rem 0;
 }
 .footer__container{
-    margin-top: 3rem;
-    grid-template-columns: 3.5fr repeat(2, 2.5fr) 3fr;
+    margin-top: 4rem;
+    grid-template-columns: 3.5fr 2fr 2.5fr 3fr;
     padding-block: 2.5rem;
     color: var(--color-white);
 }
@@ -584,10 +593,9 @@ header{
 }
 
 .footer__subtitle{
-    color: var(--color-white);
-    /* font-size: var(--small-font-size); */
-    font-size: .95rem;
     margin-block: 1.25rem .625rem;
+    color: var(--color-grey);
+    font-size: .88rem;
 }
 
 .footer__description{
@@ -620,8 +628,7 @@ header{
 .footer__link{
     /* color: var(--title-color); */
     /* font-size: var(--small-font-size); */
-    color: var(--color-white);
-    color: #999;
+    color: var(--color-grey);
     margin-bottom: 1rem;
     display: block;
     transition: all .3s var(--transition);
@@ -636,7 +643,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding-block: 1.25rem;
-    border-top: 1px solid var(--color-white);
+    border-top: 1px solid var(--color-grey);
 }
 
 .copyright,.designer{
@@ -647,8 +654,9 @@ header{
 
 .footer__form input, .footer__form textarea{
     display: block;
-    padding: .75rem .5rem;
-    background: #f5f6f6;
+    padding: .5rem .5rem;
+    background: var(--color-dark);
+    color: var(--color-white);
     width: 100%;
     margin-block: .75rem .9rem;
 }
@@ -760,7 +768,27 @@ header{
     .services__container{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .help{
+        background: linear-gradient(to right bottom, rgba(0,0,0.7), rgba(0,0,0,.8)), url(../images/help_bg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+    }
     
+
+    .newsletter__container{
+        grid-template-columns: 1fr;
+    }
+
+    .footer__container{
+        margin-top: 4rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+    }
 }
 
 
@@ -768,6 +796,13 @@ header{
     .container{
         width: 100%;
     }
+
+    .header__info{
+        align-items: flex-start;
+        row-gap: .5rem;
+        flex-direction: column;
+    }
+
     .nav__menu{
         display: block;
     }
@@ -796,13 +831,6 @@ header{
     .nav__link{
         color: var(--color-white);
     }
-    .header__info span:nth-child(1){
-        display: none;
-    }
-
-    .header__top{
-        /* display: none;x */
-    }
 
     .home__content{
         width: 30rem;
@@ -810,9 +838,7 @@ header{
 
 
     .home__title{
-        /* font-size: var(--h1-font-size); */
         font-size: var(--h4-font-size);
-        /* font-size: 1.5rem; */
         color: var(--color-white);
         font-weight: var(--weight-700);
         line-height: 1.5;
@@ -827,7 +853,8 @@ header{
 
     .info__box-header{
         flex-direction: column-reverse;
-        gap: .45rem;
+        gap: .2rem;
+        justify-content: center;
     }
 
     .behind{
@@ -841,5 +868,11 @@ header{
 
     .help__content{
         width: 95%;
+    }
+
+    .footer__container{
+        margin-top: 4rem;
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
 }
