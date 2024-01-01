@@ -46,6 +46,7 @@ html{
 
 body{
     overflow-x: hidden;
+    /* position: relative; */
 }
 
 ul{
@@ -498,6 +499,235 @@ header{
     display: flex;
     gap: 3rem;
 }
+
+
+/* NEWSLETTER SECTION */
+.newsletter{
+    background: #f5f6f6;
+}
+
+.newsletter__container{
+    grid-template-columns: 2fr 6fr;
+    align-items: center;
+    column-gap: 3rem;
+}
+
+.newsletter__title{
+    column-gap: 1rem;
+    font-size: var(--large-font-size);
+}
+
+.newsletter__description{
+    color: var(--title-color);
+    font-family: var(--second-font);
+    font-size: var(--small-font-size);
+    font-weight: var(--weight-600);
+}
+
+
+.newsletter__form{
+    display: flex;
+    gap: .55rem;
+}
+
+.newsletter__input,
+.newsletter__btn{
+    font-size: .95rem;
+}
+
+.newsletter__input{
+    background-color: var(--color-white);
+    padding-inline: 1.25rem;
+    width: 100%;
+    height: 48px;
+    border-radius: .25rem 0 0 .25rem;
+}
+
+.newsletter__btn{
+    background: var(---color-orange);
+    color: var(--color-white);
+    padding-inline: 2rem;
+    border-radius: 0 .25rem .25rem 0;
+    font-family: var(--heading-font);
+    font-weight: var(--weight-500);
+    letter-spacing: .5px ;
+    cursor: pointer;
+    transition: all .3s var(--transition);
+}
+
+
+/*=============== FOOTER ===============*/
+.footer{
+    background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9)), url(../images/male-electrician-works-switchboard-with-electrical-connecting-cable.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1rem 0;
+}
+.footer__container{
+    margin-top: 3rem;
+    grid-template-columns: 3.5fr repeat(2, 2.5fr) 3fr;
+    padding-block: 2.5rem;
+    color: var(--color-white);
+}
+
+.footer__logo-img{
+    width: 120px;
+}
+
+.footer__logo{
+    font-size: 2.5rem;
+    color: var(--color-white);
+}
+.footer__logo span{
+    color: var(---color-orange);
+}
+
+.footer__subtitle{
+    color: var(--color-white);
+    /* font-size: var(--small-font-size); */
+    font-size: .95rem;
+    margin-block: 1.25rem .625rem;
+}
+
+.footer__description{
+    margin-bottom: .25rem;
+}
+
+.footer__description span{
+    font-weight: var(--weight-600);
+}
+
+.footer__social .footer__subtitle{
+    margin-top: 1.875rem;
+}
+
+.footer__social-links{
+    column-gap: .25rem;
+}
+
+.footer__social-icon{
+    width: 20px;
+    opacity: .9;
+}
+
+.footer__title{
+    font-size: var(--large-font-size);
+    margin-block: 1rem 1.25rem;
+    font-family: var(--heading-font);
+}
+
+.footer__link{
+    /* color: var(--title-color); */
+    /* font-size: var(--small-font-size); */
+    color: var(--color-white);
+    color: #999;
+    margin-bottom: 1rem;
+    display: block;
+    transition: all .3s var(--transition);
+}
+
+.footer__link:hover{
+    color: var(---color-orange);
+    /* margin-left: .25rem; */
+}
+
+.footer__bottom{
+    display: flex;
+    justify-content: space-between;
+    padding-block: 1.25rem;
+    border-top: 1px solid var(--color-white);
+}
+
+.copyright,.designer{
+    color: var(--color-white);
+    font-size: var(--small-font-size);
+}
+
+
+.footer__form input, .footer__form textarea{
+    display: block;
+    padding: .75rem .5rem;
+    background: #f5f6f6;
+    width: 100%;
+    margin-block: .75rem .9rem;
+}
+
+.footer__form textarea{
+    resize: none;
+}
+
+.footer__form-btn{
+    cursor: pointer;
+}
+/*=============== BREADCRUMBS ===============*/
+.breadcrumb{
+    background: var(--container-color);
+    padding-block: 1.5rem;
+}
+
+.breadcrumb__list{
+    column-gap: .75rem;
+}
+
+.breadcrumb__link{
+    color: var(--text-color);
+    font-size: var(--small-font-size);
+    /* color: var(--color-white); */
+}
+
+
+
+
+
+
+
+/* ABOUT PAGE CSS */
+.about__page{
+    background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)), url('../images/about1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    margin-top: 7.5rem;
+    border-top: 1rem solid red;
+}
+
+.about__page-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about__page-content h3{
+    color: var(--color-white);
+    font-size: 2rem;
+    font-family: var(--heading-font);
+}
+
+.about__page-content p{
+    color: var(--color-white);
+    font-size: 1rem;
+}
+
+.span1 a{
+    color: var(--color-white);
+}
+
+.span2{
+    color: var(---color-orange);
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
