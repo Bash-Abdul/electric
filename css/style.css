@@ -243,6 +243,17 @@ header{
     border-top: 1rem solid red;
 }
 
+.service{
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url('../images/installUpgrade.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    margin-top: 7.5rem;
+    border-top: 1rem solid red;
+}
+
 .home__container{
     align-items: center;
 }
