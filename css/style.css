@@ -742,13 +742,53 @@ header{
 }
 .contact__page-container{
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
+    column-gap: 3rem;
     padding-block: 2rem;
 }
 
 .contact__page-heading{
     margin-bottom: 5rem;
     font-weight: var(--weight-500);
+    font-family: var(--heading-font);
+    font-weight: var(--weight-600);
+}
+
+.input__box{
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    margin-top: 1rem;
+}
+
+.contact__page-form label{
+    font-family: var(--heading-font);
+    font-weight: 500;
+    font-size: .9rem;
+}
+
+.contact__page-form input, .contact__page-form textarea{
+        border: .1rem solid var(--border-color);
+        padding-inline: 1.25rem;
+        width: 100%;
+        height: 48px;
+        border-radius: .25rem 0 0 .25rem;
+}
+
+.contact__page-form input:focus, .contact__page-form textarea:focus{
+    border: .1rem solid var(---color-orange);
+}
+
+.contact__page-form textarea{
+    resize: none;
+    width: 100%;
+    height: 100%;
+    padding-top: .75rem;
+    height: 6.5rem;
+}
+
+.contact__page-btn{
+    margin-top: 3rem;
+    cursor: pointer;
 }
 
 .contact__page-info{
@@ -766,6 +806,31 @@ header{
     padding: 2rem;
     /* box-shadow: 0 1px 1px var(--color-dark); */
     border: .1rem solid var(--border-color);
+}
+
+.contact__box i{
+    font-size: 3rem;
+    font-weight: var(--weight-300);
+}
+
+.contact__box-title{
+    font-size: 1rem;
+    font-weight: var(--weight-500);
+}
+
+.contact__box-text{
+    font-size: .85rem;
+    color: var(--color-grey-2);
+}
+
+.contact__box:hover{
+    color: var(--color-white);
+    background: var(---color-orange);
+    transition: all .2s linear
+}
+.contact__box:hover .contact__box-text{
+    color: var(--color-white);
+    transition: all .2s linear;
 }
 
 .contact__map{
@@ -950,5 +1015,18 @@ header{
         margin-top: 4rem;
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+}
+
+@media (max-width:650px) {
+
+
+    .contact__box i{
+        font-size: 2.5rem;
+        font-weight: var(--weight-300);
+    }
+
+    .contact__page-info{
+        grid-template-columns: 1fr;
     }
 }
