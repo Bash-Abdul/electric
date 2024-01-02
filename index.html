@@ -33,6 +33,13 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 
+     <!-- SPLIDE JS -->
+     <link
+     href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+     rel="stylesheet"
+   />
+
+
     <!--=============== SWIPER CSS ===============-->
     <link
     rel="stylesheet"
@@ -75,7 +82,7 @@
                 <li class="nav__item"><a href="about.html" class="nav__link">About Us</a></li>
                 <li class="nav__item"><a href="" class="nav__link">Services</a></li>
                 <li class="nav__item"><a href="" class="nav__link">Blog</a></li>
-                <li class="nav__item"><a href="" class="nav__link">Contact Us</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link">Contact Us</a></li>
             </ul>
 
 
@@ -110,16 +117,44 @@
 
     <!-- MAIN SECTION -->
     <main class="main" id="main">
-        <section class="home section--lg" id="home">
-            <div class="home__container container grid">
-                <div class="home__content">
-                    <!-- <h1 class="home__title">Pioneering Clean Energy for a Clean Africa</h1> -->
-                    <h1 class="home__title">FAST AND <span>RELIABLE</span> ELECTRICAL SERVICES</h1>
-                    <p class="home__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nemo. </p>
-                    <a href="#" class="home__btn">Learn more <span>>>></span></a>
+
+        <section class="home section--lg">
+            <div class="swiper main_slider">            
+
+                <div class="swiper-wrapper wrapper">
+    
+                  <div class="swiper-slide main_box" style="background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(images/home-bg-2.jpg) no-repeat;">
+                    <div class="main_content">
+                      <h3>Consultancy Services</h3>
+                      <h3>Contracting, Logistics & Supplies</h3>
+                    </div>
+                  </div>
+    
+                  <div class="swiper-slide main_box" style="background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(images/home-bg-3.jpg) no-repeat;">
+                    <div class="main_content">
+                      <h3>Residential Houses Construction and Real Estate development</h3> 
+                      <h3>Housing, Real Estates & Infrastructural Dev</h3>
+                    </div>
+                  </div>
+    
+                  <div class="swiper-slide main_box" style="background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(images/home_image.jpg) no-repeat;">
+                    <div class="main_content">
+                      <h3>Auctioneer, Trading, Franchise, Logistics, Distribution & Corporate Haulage.</h3> 
+                      <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                    </div>
+                  </div>
+    
                 </div>
-            </div>
+    
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+    
+    
+              </div> 
         </section>
+
+       
+
 
 
 
@@ -455,6 +490,13 @@
     </main>
 
 
+
+
+    
+    <!-- SPLIDEJS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <script src="js/splide.js"></script>
 
 
     <!-- JS -->
