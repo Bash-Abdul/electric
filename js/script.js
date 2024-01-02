@@ -1,3 +1,11 @@
+window.addEventListener("load", () => {
+    const e = document.querySelector(".loader__container");
+    e.classList.add("loader__container-hidden"),
+      e.addEventListener("transitionend", () => {
+        document.body.removeChild("loader__container");
+      });
+  });
+
 let menu = document.querySelector('.nav__menu img');
 let nav = document.querySelector('.nav__list');
 
