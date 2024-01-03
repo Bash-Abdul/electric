@@ -25,6 +25,37 @@ window.onscroll = () =>{
     }
 }
 
+const pathName = window.location.pathname,
+  pageName = pathName.split("/").pop();
+"index.html" === pageName &&
+  document.querySelector(".home__link").classList.add("active"),
+  "about.html" === pageName &&
+    document.querySelector(".about__link").classList.add("active"),
+  "service.html" === pageName &&
+    document.querySelector(".services__link").classList.add("active"),
+  "join.html" === pageName &&
+    document.querySelector(".blog__link").classList.add("active"),
+  "contact.html" === pageName &&
+    document.querySelector(".contact__link").classList.add("active")
+
+
+
+let valueDisplays = document.querySelectorAll('.num');
+let interval = 500;
+
+valueDisplays.forEach(valueDisplay => {
+    let startValue = 0;
+    let endValue = parseInt(valueDisplay.getAttribute('data-val'));
+    let duration = Math.floor(interval/endValue);
+    let counter = setInterval(function(){
+        startValue += 1;
+        valueDisplay.textContent = startValue;
+        if(startValue == endValue){
+            clearInterval(counter);
+        }
+    }, duration)
+})
+
 var swiper = new Swiper( '.main_slider', {
     type: 'loop',
 //   drag: 'free',
