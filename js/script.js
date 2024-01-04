@@ -20,6 +20,8 @@ let headerTop = document.querySelector('.header__top');
 window.onscroll = () =>{
     if (window.scrollY > 100){
         headerTop.classList.add('active');
+        headerTop.style.transition = "all .2s linear";
+        nav.classList.remove(nav);
     }else{
         headerTop.classList.remove('active');
     }
