@@ -121,6 +121,34 @@ body {
 }
 /* SITE LOADER ENDS */
 
+/* BACK TO TOP */
+.arrow{
+  width: 3rem;
+  height: 3rem;
+  position: fixed;
+  right: 1%;
+  bottom: 2%;
+  background: black;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all .2s linear;
+  cursor: pointer;
+  z-index: 100000;
+}
+
+.arrow:hover{
+  background: var(---color-orange);
+}
+
+.arrow i{
+  color: white;
+  font-size: .85rem;
+}
+/* BACK TO TOP ENDS */
+
 ul {
   list-style: none;
 }
