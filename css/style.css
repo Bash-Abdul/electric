@@ -510,6 +510,30 @@ header{
     gap: 3rem;
 }
 
+/* EACH SERVCE PAGE STYLING */
+.service-menu {
+    width: 20%;
+    height: fit-content;
+    background-color: white;
+    margin-top: 200px;
+
+}
+.service-menu button {
+    display: block;
+    padding: 10px;
+    background-color: var(--color-bisque);
+    width: 100%;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+
+.service-menu button:hover{
+    border-left: 1px solid var(---color-orange);
+    transition: all .4s ease;
+    background-color: #fff;
+}
+
 
 
 /* MEDIA QUERY */
