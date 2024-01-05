@@ -6,6 +6,20 @@ window.addEventListener("load", () => {
       });
   });
 
+  const pathName = window.location.pathname,
+  pageName = pathName.split("/").pop();
+"index.html" === pageName &&
+  document.querySelector(".home__link").classList.add("active"),
+  "about.html" === pageName &&
+    document.querySelector(".about__link").classList.add("active"),
+  "service.html" === pageName &&
+    document.querySelector(".services__link").classList.add("active"),
+  "join.html" === pageName &&
+    document.querySelector(".blog__link").classList.add("active"),
+  "contact.html" === pageName &&
+    document.querySelector(".contact__link").classList.add("active")
+
+
 let menu = document.querySelector('.nav__menu img');
 let nav = document.querySelector('.nav__list');
 
@@ -27,18 +41,6 @@ window.onscroll = () =>{
     }
 }
 
-const pathName = window.location.pathname,
-  pageName = pathName.split("/").pop();
-"index.html" === pageName &&
-  document.querySelector(".home__link").classList.add("active"),
-  "about.html" === pageName &&
-    document.querySelector(".about__link").classList.add("active"),
-  "service.html" === pageName &&
-    document.querySelector(".services__link").classList.add("active"),
-  "join.html" === pageName &&
-    document.querySelector(".blog__link").classList.add("active"),
-  "contact.html" === pageName &&
-    document.querySelector(".contact__link").classList.add("active")
 
 
 
