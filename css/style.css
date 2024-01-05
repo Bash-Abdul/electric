@@ -1335,6 +1335,10 @@ header {
     z-index: 10;
   }
 
+  .section__title {
+    font-size: var(--h4-font-size);
+  }
+
  
 }
 
@@ -1406,5 +1410,9 @@ header {
     align-items: center;
     margin-top: 11rem;
     border-top: 1rem solid red;
+  }
+
+  .section__title {
+    font-size: 1.1rem;
   }
 }
