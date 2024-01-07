@@ -42,6 +42,14 @@ window.onscroll = () =>{
 }
 
 
+// let arrow = document.querySelector('.arrow');
+// let main = document.querySelector('.main');
+
+// arrow.addEventListener('click', ()=>{
+//   window.location.href = "#main";
+// })
+
+
 
 
 let valueDisplays = document.querySelectorAll('.num');

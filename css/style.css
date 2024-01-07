@@ -945,6 +945,65 @@ header {
   color: var(---color-orange);
 }
 
+
+
+/* MAIN ABOUT PAGE */
+.about__main{
+  background: #f5f6f6;
+}
+
+.about__main-2{
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+}
+
+.about__box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.4rem;
+  padding: 4rem 3rem;
+  /* box-shadow: 0 1px 1px var(--color-dark); */
+  /* border: 0.1rem solid var(--border-color); */
+  background: var(--color-white);
+}
+
+.about__box img{
+  width: 2.5rem;
+}
+
+.about__box i {
+  font-size: 2.5rem;
+  color: var(---color-orange);
+  font-weight: var(--weight-300);
+}
+
+.about__box-title {
+  font-size: 1.1rem;
+  font-family: var(--heading-font);
+  font-weight: var(--weight-500);
+  color: var(--color-grey-2);
+}
+
+.about__box-text {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--color-grey-2);
+}
+
+.about__box:hover {
+  color: var(--color-white);
+  background: var(---color-orange);
+  transition: all 0.2s linear;
+}
+.about__box:hover .about__box-text {
+  color: var(--color-white);
+  transition: all 0.2s linear;
+}
+
+
 /* CONTACT PAGE */
 .contact__page {
   padding-top: 4rem;
@@ -1189,6 +1248,10 @@ header {
   grid-template-columns: repeat(2,1fr);
 }
 
+.about__main-2{
+  grid-template-columns: repeat(2, 1fr);
+}
+
 
 }
 
@@ -1339,6 +1402,10 @@ header {
     font-size: var(--h4-font-size);
   }
 
+  .about__box {
+    padding: 2.5rem;
+  }
+
  
 }
 
@@ -1361,6 +1428,11 @@ header {
   .glory__container{
     grid-template-columns: 1fr;
     row-gap: 1.5rem;
+}
+
+.about__main-2{
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
 }
 }
 
