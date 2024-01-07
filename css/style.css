@@ -779,7 +779,7 @@ header {
 
 /* EACH SERVCE PAGE STYLING */
 .service-menu {
-  width: 80%;
+  width: fit-content;
   height: fit-content;
   background-color: white;
   margin-top: 200px;
@@ -806,16 +806,21 @@ header {
   grid-template-columns: 40% 60%;
   grid-template-rows: 1fr;
   grid-template-areas: "container1 container2" "container3 container3";
+  column-gap: 0px;
+  /* margin-top: 10rem; */
 }
 
 .service-img{
   width: fit-content;
   height: fit-content;
+  object-fit: contain;
+  padding-top: 12.5rem;
 }
 
 .serv-img{
-  width: 120vh;
-  height: 20%;
+  width: 50rem;
+  height: 25rem;
+  /* object-fit: contain; */
   /* margin-top: 1000px; */
 }
 
