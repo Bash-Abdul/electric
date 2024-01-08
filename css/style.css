@@ -369,6 +369,17 @@ header {
     margin-top: 7rem;
 }
 
+.service{
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url('../images/installUpgrade.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    margin-top: 7.5rem;
+    border-top: 1rem solid red;
+}
+
 .home__container{
     align-items: center;
 }
@@ -762,6 +773,57 @@ header {
   transition: all 0.3s var(--transition);
 }
 
+/* EACH SERVCE PAGE STYLING */
+.service-menu {
+  width: fit-content;
+  height: fit-content;
+  background-color: white;
+  margin-top: 200px;
+  /* background-color: #000; */
+}
+.service-menu button {
+  display: block;
+  padding: 10px;
+  background-color: var(--color-bisque);
+  width: 100%;
+  margin-bottom: 10px;
+  cursor: pointer;
+
+}
+
+.service-menu button:hover{
+  border-left: 1px solid var(---color-orange);
+  transition: all .4s ease;
+  background-color: #fff;
+}
+
+.service-container{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "container1 container2" "container3 container3";
+  column-gap: 0px;
+  /* margin-top: 10rem; */
+}
+
+.service-img{
+  width: fit-content;
+  height: fit-content;
+  object-fit: contain;
+  padding-top: 12.5rem;
+}
+
+.serv-img{
+  width: 50rem;
+  height: 25rem;
+  /* object-fit: contain; */
+  /* margin-top: 1000px; */
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+}
 /*=============== FOOTER ===============*/
 .footer {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
@@ -1319,6 +1381,8 @@ header {
 .about__main-image{
   position: static;
 }
+
+
 
 
 }
