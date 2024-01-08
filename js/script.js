@@ -68,14 +68,3 @@ valueDisplays.forEach(valueDisplay => {
     }, duration)
 })
 
-var swiper = new Swiper( '.main_slider', {
-    type: 'loop',
-//   drag: 'free',
-  snap: true,
-  autoplay: true,
-  pagination: false,
-  effect:'fade',
-  autoplay: {
-    delay:5000,
-  }
-} );
