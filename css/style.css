@@ -972,7 +972,6 @@ header {
   display: flex;
   align-items: center;
   margin-top: 7rem;
-  border-top: 1rem solid red;
 }
 
 .pages__content {
