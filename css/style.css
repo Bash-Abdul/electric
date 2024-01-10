@@ -136,7 +136,14 @@ body {
   border-radius: 50%;
   transition: all .2s linear;
   cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
   z-index: 100000;
+}
+
+.arrow.active{
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .arrow:hover{
@@ -331,6 +338,11 @@ header {
   color: var(---color-orange);
 }
 
+.logo__image{
+  width: 8rem;
+  display: block;
+}
+
 .nav__link {
   font-size: 1.05rem;
   color: var(--color-black);
@@ -439,7 +451,7 @@ header {
 }
 
 .info__title {
-  font-size: var(--h5-font-size);
+  font-size: .85rem;
   font-weight: var(--weight-500);
 }
 
@@ -546,6 +558,13 @@ header {
 
 .service__btn {
   margin-top: 1rem;
+}
+
+.service__btn-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
 }
 
 /* ABOUT SECTION */

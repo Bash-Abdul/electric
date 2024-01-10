@@ -42,6 +42,9 @@
      rel="stylesheet"
    />
 
+   <!-- SWIPER CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 
     <!--=============== SWIPER CSS ===============-->
     <link
@@ -61,8 +64,34 @@
     height: 90vh;
     display: flex;
     align-items: center;
-
    }
+
+   .swiper-button-next::after,
+.swiper-button-prev::after{
+    content: '';
+
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    z-index: 10000000;
+    /* top: -1.875rem; */
+    /* background: orangered; */
+    /* border: 1px solid pink; */
+    border-radius: 50%;
+    color: white;
+    font-size: 1rem;
+}
+
+/* .swiper-button-prev{
+    left: initial;
+    right: 2.5rem;
+} */
+
+/* .swiper-button-next{
+    right: 0;
+} */
+
   </style>
 </head>
 <body>
@@ -101,7 +130,8 @@
 
         <nav class="nav__container container">
             <a href="index.html" class="logo">
-                SL<span>N</span>
+                <!-- SL<span>N</span> -->
+                <img src="images/sln_logo.png" class="logo__image" alt="">
             </a>
 
             <ul class="nav__list flex">
@@ -127,7 +157,7 @@
 
 
         <section class="home section--lg" id="home">
-            <div class="swiper">
+            <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
 
                     <div class="swiper-slide home__box" style="background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url('images/home-bg-2.jpg');">
@@ -151,48 +181,14 @@
                 </div>
 
 
-                <!-- <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div> -->
+                <div class="swiper-button-next">
+                    <i class="fi fi-rs-angle-right"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="fi fi-rs-angle-left"></i>
+                </div>
             </div>
         </section>
-
-        <!-- <section class="home section--lg">
-            <div class="swiper main_slider">            
-
-                <div class="swiper-wrapper wrapper">
-    
-                  <div class="swiper-slide main_box" style="background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(images/home-bg-2.jpg) no-repeat;">
-                    <div class="main_content">
-                      <h3>Consultancy Services</h3>
-                      <h3>Contracting, Logistics & Supplies</h3>
-                    </div>
-                  </div>
-    
-                  <div class="swiper-slide main_box" style="background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(images/home-bg-3.jpg) no-repeat;">
-                    <div class="main_content">
-                      <h3>Residential Houses Construction and Real Estate development</h3> 
-                      <h3>Housing, Real Estates & Infrastructural Dev</h3>
-                    </div>
-                  </div>
-    
-                  <div class="swiper-slide main_box" style="background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(images/home_image.jpg) no-repeat;">
-                    <div class="main_content">
-                      <h3>Auctioneer, Trading, Franchise, Logistics, Distribution & Corporate Haulage.</h3> 
-                      <h3>Lorem ipsum dolor sit amet consectetur.</h3>
-                    </div>
-                  </div>
-    
-                </div>
-    
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-    
-    
-              </div> 
-        </section> -->
-
-       
-
 
 
 
@@ -203,10 +199,10 @@
             <div class="info__container grid">
                 <div class="info__text">
                     <h4 class="info__title">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima temporibus tempora voluptate!
+                        Welcome to SLN, where innovation, expertise, and dedication converge to redefine the landscape of engineering solutions. With a steadfast commitment to excellence, we have emerged as a leading provider of comprehensive services in the fields of engineering, procurement, construction, and beyond.
                     </h4>
                     <p class="info__subtitle">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt pariatur possimus eveniet odio veniam accusamus laudantium ipsam laborum quasi quae porro quia tempora autem.
+                        At SLN, we specialize in a spectrum of services tailored to meet the diverse needs of our clients. Our core offerings encompass:
                     </p>
 
                     <div class="info__list">
@@ -318,68 +314,72 @@
                 <div class="services__item">
                     <img src="images/shortCircuit.jpg" alt="" class="services__image">
                     <div class="service__content">
-                        <h3 class="service__content-title">Shortcircuit Repair</h3>
-                        <p class="service__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet laboriosam ab culpa voluptatibus quam vitae. Iusto modi tenetur expedita.
+                        <h3 class="service__content-title">Facility Management:</h3>
+                        <p class="service__p">We take pride in managing facilities with precision, ensuring operational smoothness and maintaining peak performance standards.
                         </p>
 
-                        <a href="#" class="service__btn btn">BOOK NOW</a>
+                        <!-- <a href="#" class="service__btn btn">View More</a> -->
                     </div>
                 </div>
 
                 <div class="services__item">
                     <img src="images/facultyWiring.jpg" alt="" class="services__image">
                     <div class="service__content">
-                        <h3 class="service__content-title">Faulty And Old Wiring</h3>
-                        <p class="service__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet laboriosam ab culpa voluptatibus quam vitae. Iusto modi tenetur expedita.
+                        <h3 class="service__content-title">Engineering Procurement and Construction (EPC)</h3>
+                        <p class="service__p">From concept to completion, we orchestrate seamless EPC solutions, ensuring efficiency, quality, and timely project delivery.
                         </p>
 
-                        <a href="#" class="service__btn btn">BOOK NOW</a>
+                        <!-- <a href="#" class="service__btn btn">View More</a> -->
                     </div>
                 </div>
 
                 <div class="services__item">
                     <img src="images/maintenance.jpg" alt="" class="services__image">
                     <div class="service__content">
-                        <h3 class="service__content-title">Poor Maintenance</h3>
-                        <p class="service__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet laboriosam ab culpa voluptatibus quam vitae. Iusto modi tenetur expedita.
+                        <h3 class="service__content-title">Power and Energy Solutions:</h3>
+                        <p class="service__p">Pioneering advancements in energy solutions, we engineer sustainable and reliable systems that power industries, communities, and businesses.
                         </p>
 
-                        <a href="#" class="service__btn btn">BOOK NOW</a>
+                        <!-- <a href="#" class="service__btn btn">View More</a> -->
                     </div>
                 </div>
 
                 <div class="services__item">
                     <img src="images/electricalMaintenance.jpg" alt="" class="services__image">
                     <div class="service__content">
-                        <h3 class="service__content-title">Electrical Maintenace</h3>
-                        <p class="service__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet laboriosam ab culpa voluptatibus quam vitae. Iusto modi tenetur expedita.
+                        <h3 class="service__content-title">Mechanical Services</h3>
+                        <p class="service__p">Our expertise extends to meticulous mechanical services, encompassing precision, durability, and adherence to the highest standards.
                         </p>
 
-                        <a href="#" class="service__btn btn">BOOK NOW</a>
+                        <!-- <a href="#" class="service__btn btn">View More</a> -->
                     </div>
                 </div>
 
                 <div class="services__item">
                     <img src="images/installUpgrade.jpg" alt="" class="services__image">
                     <div class="service__content">
-                        <h3 class="service__content-title">Install And Upgrade</h3>
-                        <p class="service__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet laboriosam ab culpa voluptatibus quam vitae. Iusto modi tenetur expedita.
+                        <h3 class="service__content-title">Automation</h3>
+                        <p class="service__p">Embracing cutting-edge technology, we deploy automation solutions that optimize operations and streamline processes, enhancing productivity and performance.
                         </p>
 
-                        <a href="#" class="service__btn btn">BOOK NOW</a>
+                        <!-- <a href="#" class="service__btn btn">View More</a> -->
                     </div>
                 </div>
 
                 <div class="services__item">
                     <img src="images/diagnose.jpg" alt="" class="services__image">
                     <div class="service__content">
-                        <h3 class="service__content-title">Diagnosis And Repairs</h3>
-                        <p class="service__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet laboriosam ab culpa voluptatibus quam vitae. Iusto modi tenetur expedita.
+                        <h3 class="service__content-title">Engineering Designs and Consultancy</h3>
+                        <p class="service__p"> Our team of experts offers innovative designs and strategic consultancy services, providing tailored solutions to complex engineering challenges.
                         </p>
 
-                        <a href="#" class="service__btn btn">BOOK NOW</a>
+                        <!-- <a href="#" class="service__btn btn">View More</a> -->
                     </div>
                 </div>
+            </div>
+
+            <div class="service__btn-container">
+                <a href="service.html" class="services__btn btn flex">VIEW MORE</a>
             </div>
         </section>
 
@@ -614,6 +614,8 @@
 
 
 
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     
     <!-- SPLIDEJS JS -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>

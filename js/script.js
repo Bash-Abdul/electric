@@ -42,6 +42,23 @@ window.onscroll = () =>{
 }
 
 
+
+let arrow = document.querySelector('.arrow');
+
+window.addEventListener('scroll', ()=>{
+  if(window.pageYOffset > 100) {
+    arrow.classList.add('active');
+  }else{
+    arrow.classList.remove('active');
+  }
+});
+
+window.addEventListener('click', toTop)
+
+function toTop(){
+  window.scrollTo(0,0);
+}
+
 // let arrow = document.querySelector('.arrow');
 // let main = document.querySelector('.main');
 
@@ -68,3 +85,11 @@ valueDisplays.forEach(valueDisplay => {
     }, duration)
 })
 
+
+var swiper = new Swiper(".mySwiper", {
+  loop: true, 
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
