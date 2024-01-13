@@ -53,18 +53,16 @@ window.addEventListener('scroll', ()=>{
   }
 });
 
-window.addEventListener('click', toTop)
 
-function toTop(){
+
+
+// BACK TO TOP JS STARTS
+arrow.addEventListener('click', toTop)
+
+  function toTop(){
   window.scrollTo(0,0);
 }
-
-// let arrow = document.querySelector('.arrow');
-// let main = document.querySelector('.main');
-
-// arrow.addEventListener('click', ()=>{
-//   window.location.href = "#main";
-// })
+// BACK TO TOP JS ENDS
 
 
 
