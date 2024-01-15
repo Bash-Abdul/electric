@@ -74,6 +74,24 @@
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/lightbox.css" />
+
+
+
+    <style>
+      .ready__title span{
+        display: inline-block;
+        animation-name: loading;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes loading {
+        0%,80%{
+          transform: rotateY(360deg);
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="loader__container">
@@ -146,7 +164,6 @@
             <div class="home__content">
               <span class="home__header">Empowering Tomorrow:</span>
               <h3 class="home__title">
-                <!-- Your One-Stop Hub for <span>Cutting-Edge</span> Engineering Solutions and Sustainable <span>Innovations</span> -->
                 Your Gateway to Cutting-Edge Engineering Solutions!
               </h3>
             </div>
@@ -443,11 +460,10 @@
       <!-- ABOUT SECTION -->
       <section class="foot section--lg">
         <div class="container">
-            <div class="foot__container">
+            <div class="foot__container container">
                 <div class="foot__content flex">
                     <h3>Join Us in Shaping the Future</h3>
                     <span>At SLN, we invite you to join us in shaping the future of engineering excellence. Explore our services, discover our commitment to innovation, and experience the unparalleled expertise that defines us.</span>
-                    <span class="content__2">Contact us today to embark on a journey towards transformative engineering solutions.</span>
                 </div>
             </div>
         </div>
@@ -458,25 +474,14 @@
       <section class="ready section--lg" id="ready">
         <div class="ready__container container">
           <div class="ready__content">
-            <h3 class="ready__title">Ready to work with us?</h3>
+            <h3 class="ready__title" style="color:#0A0F3E;">
+              Ready to work with us?
+            </h3>
             <a href="contact.html" class="ready__btn btn">Contact Us</a>
           </div>
         </div>
       </section>
 
-      <!-- NEWSLETTER SECTION -->
-      <!-- <section class="newsletter section">
-            <div class="newsletter__container container grid">
-                <h3 class="newsletter__title">
-                    SIGN UP TO OUR NEWSLETTER:
-                </h3>
-
-                <form action="" class="newsletter__form">
-                    <input type="text" placeholder="Enter your Email" class="newsletter__input">
-                    <button type="submit" class="newsletter__btn">Subscribe</button>
-                  </form>
-            </div>
-        </section> -->
 
       <!--=============== FOOTER ===============-->
       <footer class="footer">
@@ -505,20 +510,6 @@
               <p class="footer__subtitle">
                 Transforming Visions into Engineering Excellence
               </p>
-
-              <!-- <h4 class="footer__subtitle">
-                    Contact
-                  </h4>
-        
-                  <p class="footer__description">
-                    <span>Address:</span> 562 Wellington Road, Street 32, San Francisco
-                  </p>
-                  <p class="footer__description">
-                    <span>Phone:</span> (+234)81-9754673
-                  </p>
-                  <p class="footer__description">
-                    <span>Hours:</span> 10:00 - 18:00, Mon - Sat
-                  </p> -->
 
               <div class="footer__social">
                 <h4 class="footer__subtitle">Follow Me</h4>
@@ -572,35 +563,38 @@
 
               <ul class="footer__links">
                 <li>
-                  <a href="" class="footer__link"
-                    ><i class="bx bx-chevron-right"></i>Shortcircuit Repair</a
+                  <a href="service.html" class="footer__link"
+                    ><i class="bx bx-chevron-right"></i>Power and Energy Solutions</a
                   >
                 </li>
                 <li>
-                  <a href="" class="footer__link"
-                    ><i class="bx bx-chevron-right"></i>Faculty And Old
-                    Wiring</a
+                  <a href="service.html" class="footer__link"
+                    ><i class="bx bx-chevron-right"></i> Mechanical Services</a
                   >
                 </li>
                 <li>
-                  <a href="" class="footer__link"
-                    ><i class="bx bx-chevron-right"></i>Poor Maintenance</a
+                  <a href="service.html" class="footer__link"
+                    ><i class="bx bx-chevron-right"></i>Automation</a
                   >
                 </li>
                 <li>
-                  <a href="" class="footer__link"
-                    ><i class="bx bx-chevron-right"></i>Electrical
-                    Maintenance</a
+                  <a href="service.html" class="footer__link"
+                    ><i class="bx bx-chevron-right"></i>Facility Management</a
                   >
                 </li>
                 <li>
-                  <a href="" class="footer__link"
-                    ><i class="bx bx-chevron-right"></i>Install And Upgrade</a
+                  <a href="service.html" class="footer__link"
+                    ><i class="bx bx-chevron-right"></i>Engineering Designs and Consultancy</a
                   >
                 </li>
                 <li>
-                  <a href="" class="footer__link"
-                    ><i class="bx bx-chevron-right"></i>Diagnosis And Repair</a
+                  <a href="service.html" class="footer__link"
+                    ><i class="bx bx-chevron-right"></i>Solar Lights and Panels Solutions</a
+                  >
+                </li>
+                <li>
+                  <a href="service.html" class="footer__link"
+                    ><i class="bx bx-chevron-right"></i>And Many More..</a
                   >
                 </li>
               </ul>
@@ -630,7 +624,6 @@
                     ><i class="bx bx-chevron-right"></i>Contact</a
                   >
                 </li>
-                <!-- <li><a href="" class="footer__link">Orderr</a></li> -->
               </ul>
             </div>
 
@@ -665,8 +658,37 @@
       </footer>
     </main>
 
+
+
+
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/scroll.js"></script>
+
     <script src="js/lightbox-plus-jquery.js"></script>
     <!-- JS -->
     <script src="js/script.js"></script>
+
+    <script>
+      ScrollReveal({
+    // reset: true,
+    distance: '500px',
+    duration: 4000,
+    delay: 200
+});
+
+// ScrollReveal().reveal('.main_content', { origin: 'top' });
+
+// ScrollReveal().reveal('.home-image, .services-container, .portfolio-box, .contact form, .skills-container', { origin: 'bottom' });
+
+
+// ScrollReveal().reveal('.service_box', '.about_image','.contact_content', { origin: 'left' });
+ScrollReveal().reveal('.home__header',{ origin: 'bottom' });
+ScrollReveal().reveal('.home__title',{ origin: 'left' });
+
+// ScrollReveal().reveal('.about','.contact_map', { origin: 'right' });
+
+ScrollReveal().reveal('')
+    </script>
   </body>
 </html>
