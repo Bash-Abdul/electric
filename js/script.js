@@ -44,12 +44,15 @@ window.onscroll = () =>{
 
 
 let arrow = document.querySelector('.arrow');
+let whatsapp = document.querySelector('#whatsapp');
 
 window.addEventListener('scroll', ()=>{
   if(window.pageYOffset > 100) {
     arrow.classList.add('active');
+    whatsapp.classList.add('active');
   }else{
     arrow.classList.remove('active');
+    whatsapp.classList.remove('active');
   }
 });
 

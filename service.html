@@ -40,30 +40,33 @@
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="css/style.css" />
 
+  
     <style>
-
-      .ready{
-        background: #f5f6f6;
-        padding: 5rem 0;
-      }
-      .ready__container{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+      .ready__title span{
+        display: inline-block;
+        animation-name: loading;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
       }
 
-      .ready__title{
-        font-size: 3rem;
-        font-weight: normal;
+      .ready__title span:nth-child(1){
+        animation-delay: .3s;
       }
 
-      .ready__btn{
-        margin-top: 2rem;
-        font-size: 1.1rem;
+      .ready__title span:nth-child(2){
+        animation-delay: .9s;
       }
 
+      .ready__title span:nth-child(3){
+        animation-delay: 1.4s;
+      } 
 
+      @keyframes loading {
+        0%,80%{
+          transform: rotateY(360deg);
+        }
+      }
     </style>
   </head>
   <body>
@@ -76,6 +79,8 @@
     <div class="arrow" id="arrow">
       <a href="#header"><i class="fa-solid fa-arrow-up"></i></a>
     </div>
+
+    <a href="https://wa.me/+2349055633464" target="_blank"><img src="imagesss/whatsapp.png" id="whatsapp" alt=""></a>
 
     <!-- HEADER / NAVBAR -->
 
@@ -169,91 +174,152 @@
         </div>
       </section>
 
+      <section class="section__top section--lg" id="section__top">
+        <div class="container">
+          <div class="section__top-content">
+            <h1>Your trusted partner in delivering a comprehensive suite of engineering solutions tailored to meet your diverse needs. With a commitment to excellence, innovation, and client satisfaction, we offer a wide range of services that cater to various facets of the engineering landscape.</h1>
+          </div>
+        </div>
+      </section>
+
       <!-- SERVICES SECTION -->
     <section class="services section container">
-        <h3 class="section__title">OUR FEATURED SERVICES</h3>
+        <h3 class="section__title">OUR SERVICES</h3>
 
         <div class="services__container grid">
-            <div class="services__item">
-                <img src="images/shortCircuit.jpg" alt="" class="services__image">
-                <div class="service__content">
-                    <h3 class="service__content-title">Facility Management:</h3>
-                    <p class="service__p">We take pride in managing facilities with precision, ensuring operational smoothness and maintaining peak performance standards.
-                    </p>
 
-                  
-                </div>
-            </div>
+          <div class="services__item">
 
-            <div class="services__item">
-                <img src="images/facultyWiring.jpg" alt="" class="services__image">
-                <div class="service__content">
-                    <h3 class="service__content-title">Engineering Procurement and Construction</h3>
-                    <p class="service__p">From concept to completion, we orchestrate seamless EPC solutions, ensuring efficiency, quality, and timely project delivery.
-                    </p>
+              <img src="imagesss/facility.png" alt="">
+              <h3 class="service__content-title">Facility Management:</h3>
+              <p class="service__p">
+                We take pride in managing facilities with precision, ensuring
+                operational smoothness and maintaining peak performance
+                standards.
+              </p>
 
-                    
-                </div>
-            </div>
+          </div>
 
-            <div class="services__item">
-                <img src="images/maintenance.jpg" alt="" class="services__image">
-                <div class="service__content">
-                    <h3 class="service__content-title">Power and Energy Solutions:</h3>
-                    <p class="service__p">Pioneering advancements in energy solutions, we engineer sustainable and reliable systems that power industries, communities, and businesses.
-                    </p>
+          <div class="services__item">
+           
+              <img src="imagesss/epc.png" alt="">
+              <h3 class="service__content-title">
+                Engineering Procurement and Construction (EPC)
+              </h3>
+              <p class="service__p">
+                <!-- From concept to completion, we orchestrate seamless EPC
+                solutions, ensuring efficiency, quality, and timely project
+                delivery. -->
+                Transform your visions into reality with our end-to-end EPC services. From conceptualization to execution, we seamlessly integrate engineering, procurement, and construction processes to deliver projects that stand the test of time.
+              </p>
 
-                    
-                </div>
-            </div>
+              
+          </div>
 
-            <div class="services__item">
-                <img src="images/electricalMaintenance.jpg" alt="" class="services__image">
-                <div class="service__content">
-                    <h3 class="service__content-title">Mechanical Services</h3>
-                    <p class="service__p">Our expertise extends to meticulous mechanical services, encompassing precision, durability, and adherence to the highest standards.
-                    </p>
+          <div class="services__item">
+             <img src="imagesss/power.png" alt="">
+           
+              <h3 class="service__content-title">
+                Power and Energy Solutions:
+              </h3>
+              <p class="service__p">
+                <!-- Pioneering advancements in energy solutions, we engineer
+                sustainable and reliable systems that power industries,
+                communities, and businesses. -->
+                At the forefront of energy innovation, we engineer sustainable power solutions that empower industries, communities, and businesses. From conventional to renewable energy sources, we ensure reliability and efficiency in every solution.
+              </p>
 
-                    
-                </div>
-            </div>
+              
+           
+          </div>
 
-            <div class="services__item">
-                <img src="images/installUpgrade.jpg" alt="" class="services__image">
-                <div class="service__content">
-                    <h3 class="service__content-title">Automation</h3>
-                    <p class="service__p">Embracing cutting-edge technology, we deploy automation solutions that optimize operations and streamline processes, enhancing productivity and performance.
-                    </p>
+          <div class="services__item">
+            <img src="imagesss/wrench.png" alt="">
+            
+              <h3 class="service__content-title">Mechanical Services</h3>
+              <p class="service__p">
+                <!-- Our expertise extends to meticulous mechanical services,
+                encompassing precision, durability, and adherence to the highest
+                standards. -->
+                Precision and durability define our Mechanical Services. Our expert team ensures that mechanical systems operate seamlessly, delivering performance that exceeds industry standards.
+              </p>
 
-                    
-                </div>
-            </div>
+              
+       
+          </div>
 
-            <div class="services__item">
-                <img src="images/diagnose.jpg" alt="" class="services__image">
-                <div class="service__content">
-                    <h3 class="service__content-title">Engineering Designs and Consultancy</h3>
-                    <p class="service__p"> Our team of experts offers innovative designs and strategic consultancy services, providing tailored solutions to complex engineering challenges.
-                    </p>
+          <div class="services__item">
+            <img src="imagesss/automation.png" alt="">
+            
+              <h3 class="service__content-title">Automation</h3>
+              <p class="service__p">
+                Embracing cutting-edge technology, we deploy automation
+                solutions that optimize operations and streamline processes,
+                enhancing productivity and performance.
+              </p>
 
-                    
-                </div>
-            </div>
+              
+           
+          </div>
+
+          <div class="services__item">
+
+            <img src="imagesss/blueprint.png" alt="">
+            
+              <h3 class="service__content-title">
+                Engineering Designs and Consultancy
+              </h3>
+              <p class="service__p">
+                Our team of experts offers innovative designs and strategic
+                consultancy services, providing tailored solutions to complex
+                engineering challenges.
+              </p>
+
+          </div>
+
+          <div class="services__item">
+
+            <img src="imagesss/toolbox.png" alt="">
+            
+              <h3 class="service__content-title">
+                Sales and Supplies of Engineering Spares and Materials
+              </h3>
+              <p class="service__p">
+                Your trusted source for top-quality engineering spares and materials. We offer a comprehensive range of products, ensuring that your projects have access to the finest components.
+              </p>
+
+          </div>
+
+          <div class="services__item">
+
+            <img src="imagesss/solar-energy.png" alt="">
+            
+              <h3 class="service__content-title">
+                Solar Lights and Panels Solutions
+              </h3>
+              <p class="service__p">
+                Championing sustainability, our solar solutions harness the power of renewable energy. Illuminate the future with state-of-the-art solar lights and panels that redefine eco-friendly lighting solutions.
+              </p>
+
+          </div>
+
         </div>
 
-        <div class="service__btn-container">
+        <!-- <div class="service__btn-container">
             <a href="service.html" class="services__btn btn flex">VIEW MORE</a>
-        </div>
+        </div> -->
     </section>
 
       <section class="ready section--lg" id="ready">
         <div class="ready__container container">
           <div class="ready__content">
-            <h3 class="ready__title">Ready to work with us?</h3>
+            <h3 class="ready__title">Discover the difference with <span>S</span><span>L</span><span>N</span></h3>
+            <p class="ready__subtitle">Contact us today to embark on a journey of engineering excellence and innovation.</p>
             <a href="contact.html" class="ready__btn btn">Contact Us</a>
           </div>
         </div>
       </section>
+
 
       <footer class="footer">
         <div class="container">
@@ -371,11 +437,6 @@
                 <li>
                   <a href="services.html" class="footer__link"
                     ><i class="bx bx-chevron-right"></i>Services</a
-                  >
-                </li>
-                <li>
-                  <a href="blogs.html" class="footer__link"
-                    ><i class="bx bx-chevron-right"></i>Blog</a
                   >
                 </li>
                 <li>
