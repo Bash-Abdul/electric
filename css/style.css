@@ -1191,7 +1191,7 @@ header {
 
 /* FOOT SECTION */
 .foot{
-  background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9)),url(../imagesss/help_background.jpg);
+  background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9)),url(../imagesss/help_bg.jpg);
   background-size: cover !important;
   background-position: center !important;
   background-attachment: fixed;
@@ -1589,7 +1589,7 @@ header {
 }
 
 .foot{
-  background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9)),url(../imagesss/help_background.jpg);
+  background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9)),url(../imagesss/help_bg.jpg);
   background-size: cover !important;
   background-position: center !important;
   background-attachment: fixed;
