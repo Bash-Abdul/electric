@@ -1,3 +1,11 @@
+#whatsapp,
+.arrow,
+.contact__box,
+.footer__form-btn,
+.nav__menu,
+.newsletter__btn {
+  cursor: pointer;
+}
 body,
 html {
   overflow-x: hidden;
@@ -10,9 +18,13 @@ body {
 a {
   text-decoration: none;
 }
+.about__image-title,
+.footer__title,
 .help__title,
 .home__header,
+.newsletter__btn,
 .newsletter__title,
+.pages__title,
 .section__title,
 .section__top-content,
 .service__content-title {
@@ -126,7 +138,6 @@ html::-webkit-scrollbar-track {
   opacity: 0;
   pointer-events: none;
   transition: 0.2s linear;
-  cursor: pointer;
 }
 #whatsapp,
 .arrow,
@@ -171,9 +182,12 @@ header {
   border-radius: 50%;
   z-index: 100000;
 }
+.about__main-list span i,
 .arrow:hover,
 .btn,
-.info__list p i {
+.contact__box:hover,
+.info__list p i,
+.newsletter__btn {
   background: var(--color-secondary);
 }
 #whatsapp.active,
@@ -322,7 +336,6 @@ header {
   position: relative;
 }
 .logo__image {
-  width: 4rem;
   display: block;
 }
 .nav__link {
@@ -330,17 +343,20 @@ header {
   color: #101720;
   font-weight: var(--weight-400);
 }
+.footer__logo span,
+.glory__box i,
+.help__title span,
 .home__header,
 .nav__link.active,
-.nav__link:hover {
+.nav__link:hover,
+.service__content-title {
   color: var(--color-secondary);
 }
 .nav__link.active {
   font-weight: 600;
 }
-.nav__menu {
-  width: 1.7rem;
-  cursor: pointer;
+.menu {
+  font-size: 2.5rem;
   display: none;
 }
 .main_box {
@@ -348,18 +364,11 @@ header {
   margin-top: 5rem;
 }
 .home__container {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../imagesss/home-bg-3.jpg);
-  background: linear-gradient(
-      to bottom right,
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.8)
-    ),
-    url(../imagesss/home-bg-3.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)) no-repeat,
+    url(../imagesss/home-bg-3.jpg) no-repeat;
   height: 100vh;
   background-size: cover !important;
   background-position: center !important;
-  background-repeat: no-repeat;
   display: flex;
   align-items: center;
 }
@@ -455,7 +464,6 @@ header {
 .service__content-title {
   font-size: 1.2rem;
   font-weight: var(--weight-600);
-  color: var(--color-secondary);
 }
 .service__p {
   font-size: 0.8rem;
@@ -480,6 +488,14 @@ header {
 .section__top-content {
   color: var(--color-dark);
   font-weight: var(--weight-700);
+  box-shadow: 0 .2rem .5rem rgba(0, 0, 0, 0.3);
+  padding: .7rem;
+  text-align: center;
+  font-size: .9rem;
+ 
+}
+.section__top-content h1{
+  font-family: var(--heading-font);
 }
 .footer__description span,
 .newsletter__description {
@@ -500,7 +516,7 @@ header {
   gap: 1rem;
 }
 .glory {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4))
       center/cover fixed,
     url(../imagesss/about1.jpg) center/cover fixed;
 }
@@ -513,10 +529,10 @@ header {
   align-items: center;
   justify-content: center;
 }
-.glory__box i {
-  color: var(--color-secondary);
-}
 .foot__content,
+.footer__container,
+.footer__logo,
+.newsletter__btn,
 .newsletter__title,
 .num,
 .projects__title,
@@ -530,51 +546,6 @@ header {
   border-top: 0.2rem dotted var(--color-secondary);
   position: absolute;
   top: 90%;
-}
-.footer__logo span,
-.help__title span {
-  color: var(--color-secondary);
-}
-.help {
-  background: linear-gradient(
-        to right bottom,
-        rgba(0, 0, 0.3),
-        rgba(0, 0, 0, 0.3)
-      )
-      center/cover no-repeat,
-    url(../imagesss/help_background.jpg) center/cover no-repeat;
-  height: 80vh;
-  display: flex;
-  align-items: center;
-}
-.help__content {
-  width: 45%;
-  background: var(--color-white);
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-.help__title {
-  border-left: 0.2rem solid var(--color-secondary);
-  padding-left: 1.6rem;
-}
-.help__subtitle {
-  margin: 2rem 0;
-}
-.projects {
-  background: var(--color-black);
-}
-.projects__title {
-  margin-bottom: 2rem;
-}
-.project__container {
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  grid-gap: 1.5rem;
-  padding: 3rem;
-}
-.project__container img {
-  width: 100%;
 }
 .newsletter {
   background: #f5f6f6;
@@ -596,17 +567,6 @@ header {
   font-family: var(--second-font);
   font-size: var(--small-font-size);
 }
-.footer__container,
-.footer__logo,
-.newsletter__btn {
-  color: var(--color-white);
-}
-.about__image-title,
-.footer__title,
-.newsletter__btn,
-.pages__title {
-  font-family: var(--heading-font);
-}
 .newsletter__form {
   display: flex;
   gap: 0.55rem;
@@ -622,17 +582,11 @@ header {
   height: 48px;
   border-radius: 0.25rem 0 0 0.25rem;
 }
-.about__main-list span i,
-.contact__box:hover,
-.newsletter__btn {
-  background: var(--color-secondary);
-}
 .newsletter__btn {
   padding-inline: 2rem;
   border-radius: 0 0.25rem 0.25rem 0;
   font-weight: var(--weight-500);
   letter-spacing: 0.5px;
-  cursor: pointer;
   transition: 0.3s linear;
 }
 .contact__box:hover,
@@ -645,12 +599,12 @@ header {
   justify-content: center;
 }
 .footer {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
-    url(../imagesss/male-electrician-works-switchboard-with-electrical-connecting-cable.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) no-repeat,
+    url(../imagesss/male-electrician-works-switchboard-with-electrical-connecting-cable.jpg)
+      no-repeat;
   padding: 1rem 0;
   background-size: cover !important;
   background-position: center !important;
-  background-repeat: no-repeat;
 }
 .footer__container {
   margin-top: 4rem;
@@ -658,11 +612,14 @@ header {
   padding-block: 2.5rem;
 }
 .about__main-1,
-.about__main-list {
+.about__main-3,
+.about__main-list,
+.contact__page-container,
+.contact__page-info {
   grid-template-columns: repeat(2, 1fr);
 }
 .logo__image {
-  width: 5rem;
+  width: 6.8rem;
 }
 .footer__subtitle {
   margin-block: 1.5rem 0.425rem;
@@ -676,7 +633,7 @@ header {
   margin-top: 1.875rem;
 }
 .footer__social-links {
-    margin-top: 1rem;
+  margin-top: 1rem;
   column-gap: 0.25rem;
 }
 .footer__social-icon {
@@ -711,8 +668,11 @@ header {
   display: flex;
   align-items: center;
 }
+.about__box i,
+.foot__content h3,
 .footer__link i,
 .footer__link:hover,
+.ready__title span,
 .span1 a:hover,
 .span2 {
   color: var(--color-secondary);
@@ -747,16 +707,8 @@ header {
   width: 100%;
   margin-block: 0.75rem 0.9rem;
 }
-.about__box i,
-.foot__content h3,
-.ready__title span {
-  color: var(--color-secondary);
-}
 .footer__form textarea {
   resize: none;
-}
-.footer__form-btn {
-  cursor: pointer;
 }
 .breadcrumb {
   background: var(--container-color);
@@ -770,7 +722,7 @@ header {
   font-size: var(--small-font-size);
 }
 .pages {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8))
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3))
       center/cover,
     url("../imagesss/about1.jpg") center/cover no-repeat;
   height: 35vh;
@@ -804,6 +756,11 @@ header {
   height: 100%;
   clip-path: polygon(4% 0, 100% 0%, 96% 100%, 0% 100%);
 }
+.about__main-image,
+.about__main-title::before,
+.contact__page-heading::before {
+  position: absolute;
+}
 .about__image-title {
   position: absolute;
   bottom: 1%;
@@ -820,7 +777,6 @@ header {
   color: var(--color-white);
 }
 .about__main-image {
-  position: absolute;
   width: 100%;
   height: 100%;
   left: -5%;
@@ -835,9 +791,6 @@ header {
 .about__main-title {
   font-size: 1.3rem;
   margin-bottom: 2rem;
-}
-.about__main-title::before {
-  position: absolute;
 }
 .about__main-subtitle {
   font-size: 0.95rem;
@@ -867,11 +820,6 @@ header {
 .about__main-2 {
   grid-template-columns: repeat(3, 1fr);
   column-gap: 2rem;
-}
-.about__main-3,
-.contact__page-container,
-.contact__page-info {
-  grid-template-columns: repeat(2, 1fr);
 }
 .about__main-3 {
   align-items: center;
@@ -916,9 +864,6 @@ header {
   font-weight: var(--weight-500);
   font-weight: var(--weight-600);
 }
-.contact__page-heading::before {
-  position: absolute;
-}
 .input__box {
   gap: 1.1rem;
   margin-top: 1rem;
@@ -962,7 +907,6 @@ header {
   gap: 1.1rem;
   padding: 2rem;
   border: 0.1rem solid var(--border-color);
-  cursor: pointer;
 }
 .contact__box i {
   font-size: 3rem;
@@ -1006,12 +950,13 @@ header {
   font-size: 1.1rem;
 }
 .foot {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)) fixed,
-    url(../imagesss/help_bg.jpg) fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)) no-repeat
+      fixed,
+    url(../imagesss/help_bg.jpg) no-repeat fixed;
   background-size: cover !important;
   background-position: center !important;
-  background-repeat: no-repeat;
-  height: 60vh;
+  min-height: 60vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1027,10 +972,12 @@ header {
   font-size: 1.3rem;
   font-weight: var(--weight-300);
 }
-
-
-
-/* MEDIA QUERY STARTS */
+.white__box {
+  width: 4rem;
+  height: 4rem;
+  background: #fff;
+  display: none;
+}
 @media (max-width: 1024px) {
   html {
     font-size: 90%;
@@ -1133,17 +1080,24 @@ header {
   }
 }
 @media (max-width: 768px) {
+  .white__box {
+    width: 4rem;
+    height: 4rem;
+    background: #fff;
+    display: inline-block;
+  }
+  .logo__image,
+  .nav__menu {
+    display: block;
+  }
   .header__social a,
   .home__title,
   .nav__link {
     color: var(--color-white);
   }
-
   .logo__image {
-    width: 3.5rem;
-    display: block;
+    width: 6rem;
   }
-
   .about__container,
   .about__main-list,
   .footer__container,
@@ -1194,9 +1148,6 @@ header {
     color: var(--color-secondary);
     font-size: 1rem;
   }
-  .nav__menu {
-    display: block;
-  }
   .nav__list {
     position: absolute;
     left: 0;
@@ -1219,6 +1170,12 @@ header {
   .nav__item {
     padding-block: 1.5rem;
   }
+  .menu {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+ 
   .home__content {
     width: 30rem;
   }
@@ -1228,14 +1185,6 @@ header {
     line-height: 1.5;
   }
   .home__container {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url(../imagesss/home-bg-3.jpg);
-    background: linear-gradient(
-        to bottom right,
-        rgba(0, 0, 0, 0.8),
-        rgba(0, 0, 0, 0.8)
-      ),
-      url(../imagesss/home-bg-3.jpg);
     height: 70vh;
     background-size: cover !important;
     background-position: center !important;
@@ -1262,9 +1211,6 @@ header {
     width: 95%;
   }
   .pages {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8))
-        center/cover,
-      url("../imagesss/about1.jpg") center/cover no-repeat;
     height: 35vh;
     margin-top: 10rem;
   }
@@ -1325,8 +1271,6 @@ header {
     line-height: 1.5;
   }
   .foot {
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)) fixed,
-      url(../imagesss/help_bg.jpg) fixed;
     background-size: cover !important;
     background-position: center !important;
     height: 30vh;
@@ -1345,6 +1289,11 @@ header {
     margin: 1rem auto;
     font-size: 0.85rem;
     font-weight: var(--weight-300);
+  }
+
+  .section__top-content{
+    font-size: .8rem;
+    text-align: left;
   }
 }
 @media (max-width: 468px) {
@@ -1382,9 +1331,6 @@ header {
     border-top: 1px solid var(--color-grey);
   }
   .pages {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8))
-        center/cover,
-      url("../imagesss/about1.jpg") center/cover no-repeat;
     height: 35vh;
     margin-top: 12rem;
   }
@@ -1402,12 +1348,9 @@ header {
     line-height: 1.5;
   }
   .home__container {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-      url(../imagesss/home-bg-3.jpg);
     height: 70vh;
     background-size: cover !important;
     background-position: center !important;
-    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     margin-top: 8rem;
@@ -1419,9 +1362,8 @@ header {
     font-size: 0.95rem;
   }
 }
-
-@media (max-width:320px) {
-    html{
-        font-size: 73%;
-    }
+@media (max-width: 320px) {
+  html {
+    font-size: 73%;
+  }
 }
